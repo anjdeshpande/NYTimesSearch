@@ -1,0 +1,68 @@
+<!-- fragment_filter.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center" android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/lbl_your_name" android:text="Your name"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_your_name"
+        android:layout_width="match_parent"  android:layout_height="wrap_content"
+        android:inputType="text"
+         />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/rlDate">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/begin_date"
+            android:layout_gravity="left"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tvBeginText"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etBeginDate"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/tvBeginText"
+            android:text="" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/rlAction">
+        <Button
+            android:id="@+id/dialog_cancel"
+            style="?android:textAppearanceSmall"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/dialog_ok"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Agree"/>
+    </RelativeLayout>
+</LinearLayout>
